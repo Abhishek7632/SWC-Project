@@ -1,0 +1,237 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: Open Sans;
+   background: #F5F7F9;
+    
+}
+.navbar-brand{
+    padding-left: 20px;
+    font-weight: 800;
+}
+#header{
+    position: fixed;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    height: 70px;
+}
+#icon{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.form-inline{
+    border-left: 2px solid #D4DADF;
+  height: 36px;
+    padding-left: 20px;
+    float: right;
+}
+
+.mainLoginInput{
+  height: 40px;
+  padding-left: 15px;
+
+    border: 0;
+}
+
+.mainLoginInput::placeholder { 
+font-family: FontAwesome;
+font-weight: 700;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: #A7AEBA;
+}
+
+.mainLoginInput:focus{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: beige;
+    padding-left: 15px;
+}
+#search::placeholder{
+    font-weight: 700;
+}
+/*
+.sidebar {
+  padding: 0;
+    margin-top: 16px;
+  width: 240px;
+  background-color:#F5F7F9;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+    font-weight: normal;
+}
+
+.sidebar a {
+    margin-left: 40px;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+    font-weight: normal;
+}
+
+.sidebar a.active {
+  background-color: #FFFFFF;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #FFFFFF;
+}
+*/
+
+.sidenav {
+  padding: 0;
+    margin-top: 16px;
+  width: 240px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+    font-weight: normal;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+   margin-left: 40px;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+    font-weight: normal;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  background-color: #FFFFFF;
+}
+.sidenav a.active{
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.active {
+/*  background-color: green;*/
+  color: black;
+}
+
+
+.dropdown-container {
+  display: none;
+    width: 180px;
+    margin-left: 30px;
+}
+
+ul{
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.tag{
+    padding: 15px 0px 15px 25px;
+}
+.tag:hover{
+    background-color:lightgray;
+}
+#add{
+    visibility: hidden;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+#main {
+  margin-left: 240px;
+  padding: 1px 16px;
+/*    background-color: #1E1E1E;*/
+    margin-top: 80px;
+}
+
+.movie{
+    width: 270px;
+    height: 400px;
+    margin: 1rem;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img{
+    width: 100%;
+}
+
+
+
+.overview .one .fifth{
+    visibility: hidden;
+}
+.overview .one .fourth{
+    visibility: hidden;
+}
+.overview .one .third{
+    visibility: hidden;
+}
+.overview .one .second{
+    visibility: hidden;
+}
+
+.overview .two .fifth{
+    visibility: hidden;
+}
+.overview .two .fourth{
+    visibility: hidden;
+}
+.overview .two .third{
+    visibility: hidden;
+}
+
+.overview .three .fourth{
+    visibility: hidden;
+}
+.overview .three .fifth{
+    visibility: hidden;
+}
+
+.overview .four .fifth{
+    visibility: hidden;
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform:translateY(0);
+}
+.details{
+    font-size: 10px;
+}

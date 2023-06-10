@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <title>SWC Project</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+      <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar fixed-top" id="header">
+          
+          <a class="navbar-brand" href="#" style="color: black" onclick="refreshPage()"><img src="Frame%203.png" id="icon">Movies</a>
+          
+          <form id="form" class="form-inline">
+<!--        <i id="searchicon" class="bi bi-search"><input id="search" type="search" placeholder="Quick Search" aria-label="Search"></i>-->
+              
+              <input class="mainLoginInput" id="search" type="text" placeholder="&#61442; Quick Search"/>
+          
+          </form>
+          
+        </nav>
+    <div class="container-fluid">
+      
+<!--
+        <div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">All Team</a>
+  <a href="#contact">Core</a>
+  <a href="#about">Developers</a>
+  <a href="#about">Designers</a>
+  <a href="#about">Mentors</a>
+            <button id="add" type="button" class="btn btn-lg btn-dark">+ ADD</button>
+</div>
+-->
+
+        <div class="sidenav">
+  <a class="active" href="#">HOME</a>
+             <a href ="#" class="dropdown-btn">Genre
+    <i class="bi bi-caret-down-square-fill"></i>
+  </a>
+  <div class=" dropdown-container">
+    
+    <ul id="tags">
+
+        <li class="tagg"><a class="active" href="#genre">Genre</a></li>
+        <li class="tagg"><a class="tag" href="#">Action</a></li>
+        <li class="tagg"><a class="tag" href="#">Adventure</a></li>
+        <li class="tagg"><a class="tag" href="#">Horror</a></li>
+        
+        
+
+    </ul>
+
+  </div>
+  
+  <a href="#">All Team</a>
+  <a href="#">Core</a>
+ <a href="#">Developers</a>
+  <a href="#">Designers</a>
+  <a href="#">Mentors</a>
+            <button id="add" type="button" class="btn btn-lg btn-dark">+ ADD</button>
+</div>
+        
+        
+<!-- Page content -->
+<main id="main">
+  <div class="movie">
+            <img src="" alt="Image">
+            
+            <div class="overview">
+                <div class="two">
+                <i class=" first bi bi-star-fill"></i>
+                <i class="second bi bi-star-fill"></i>
+                <i class="third bi bi-star-fill"></i>
+                <i class="fourth bi bi-star-fill"></i>
+                <i class=" fifth bi bi-star-fill"></i>
+                </div>
+                <div class="movie-title"><h3>Movie Title</h3></div>
+                <div class="details"><h6>Overview</h6></div>
+            </div>
+        </div>
+
+
+         <div class="movie">
+            <img src="" alt="Image">
+            
+            <div class="overview">
+                <div class="three">
+                <i class=" first bi bi-star-fill"></i>
+                <i class="second bi bi-star-fill"></i>
+                <i class="third bi bi-star-fill"></i>
+                <i class="fourth bi bi-star-fill"></i>
+                <i class=" fifth bi bi-star-fill"></i>
+                </div>
+                <div class="movie-title"><h3>Movie Title</h3></div>
+                <div class="details"><h6>Overview</h6></div>
+            </div>
+        </div>
+
+
+
+         <div class="movie">
+            <img src="" alt="Image">
+            
+            <div class="overview">
+                <div class="four">
+                <i class=" first bi bi-star-fill"></i>
+                <i class="second bi bi-star-fill"></i>
+                <i class="third bi bi-star-fill"></i>
+                <i class="fourth bi bi-star-fill"></i>
+                <i class=" fifth bi bi-star-fill"></i>
+                </div>
+                <div class="movie-title"><h3>Movie Title</h3></div>
+                <div class="details"><h6>Overview</h6></div>
+            </div>
+        </div>
+
+
+
+
+
+        </main>
+      
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.min.js"></script>
+      <script src="javascript.js"></script>
+      <script>
+      function refreshPage(){
+          window.location.reload();
+      }
+      </script>
+  </body>
+</html>
